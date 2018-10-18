@@ -1,2 +1,10 @@
 class ApplicationController < ActionController::Base
+  before_action :set_user
+
+
+  private
+
+  def set_user
+    user_id = params[:user_id]
+  end
 end
